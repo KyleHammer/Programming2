@@ -16,6 +16,9 @@ public class LongestDrySpell {
 			System.out.print("Rainfall: ");
 			rainfall = In.nextDouble();
 		}
+
+		// One last check, in case the last day is 0
+		// and it is a part of the longest dry spell
 		if (count > max)
 			max = count;
 		System.out.println("Longest dry spell = " + max);

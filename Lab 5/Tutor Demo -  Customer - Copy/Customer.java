@@ -8,6 +8,12 @@
 
 
 // == GOALS == 
+// Menu
+// Deposit
+// Withdraw
+// Transfer
+// Show
+// Exit
 
 public class Customer {
     // == FIELDS == 

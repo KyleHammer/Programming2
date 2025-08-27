@@ -5,6 +5,12 @@
  * and you can transfer money from the savings to the loan account.
  * You can also view the balance of all accounts.
  */
+
+
+// == FIELDS == 
+
+// == GOALS == 
+
 public class Customer {
-    
+    // == CONSTRUCTOR == 
 }

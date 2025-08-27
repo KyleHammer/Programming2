@@ -6,6 +6,12 @@
  * transfer money to another account.
  * In all of these, the amount is read in.
  */
+
+// == FIELDS == 
+
+// == GOALS == 
+
+
 public class Account {
-    
+    // == CONSTRUCTOR == 
 }

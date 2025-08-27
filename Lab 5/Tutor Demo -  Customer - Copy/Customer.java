@@ -16,5 +16,12 @@ public class Customer {
     Account loanAccount;
 
     // == CONSTRUCTOR == 
-
+    // Default values? Read-based? Initilise from params?
+    // savingsAccount, loanAccount
+    // Does not specify to read anything, or init from params
+    // so we can just start from literals/default values
+    public Customer(){
+        savingsAccount = new Account("Savings");
+        loanAccount = new Account("Loan");
+    }
 }

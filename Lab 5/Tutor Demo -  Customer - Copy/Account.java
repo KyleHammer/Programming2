@@ -17,5 +17,13 @@ public class Account {
     double balance;
 
     // == CONSTRUCTOR ==
+    // Default values? Read-based? Initilise from params?
+    // type: This could be "savingsAccount" or "loanAccount"
+    // balance: The initial balance is "read in" from the user.
+    public Account(String type){
+        this.type = type;
+        // balance = readBalance();
+    }
+
 
 }

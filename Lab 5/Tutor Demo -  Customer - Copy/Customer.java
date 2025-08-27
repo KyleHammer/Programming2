@@ -11,7 +11,10 @@
 
 public class Customer {
     // == FIELDS == 
+    // A customer has a savings account and a loan account.
+    Account savingsAccount;
+    Account loanAccount;
 
     // == CONSTRUCTOR == 
-    
+
 }

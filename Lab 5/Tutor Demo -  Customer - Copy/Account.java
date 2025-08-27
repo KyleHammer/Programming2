@@ -7,15 +7,15 @@
  * In all of these, the amount is read in.
  */
 
-// Each account has a type (savings/loan) and a balance.
-
-
 // == GOALS == 
 
 
 public class Account {
     // == FIELDS == 
+    // Each account has a type (savings/loan) and a balance.
+    String type;
+    double balance;
 
     // == CONSTRUCTOR ==
-    
+
 }

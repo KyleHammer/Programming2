@@ -8,7 +8,10 @@
  */
 
 // == GOALS == 
-
+// Deposit - CUSTOMER+ACCOUNT, call deposit() from customer, deposit(double amount) in account
+// Withdraw - CUSTOMER+ACCOUNT, call withdraw() from customer, withdraw(double amount) in account
+// Transfer - CUSTOMER+ACCOUNT, call transfer() from customer, transferTo(Account target, double amount) in account
+// Show - CUSTOMER+ACCOUNT, call show() from customer, Override toString() in account
 
 public class Account {
     // == FIELDS == 

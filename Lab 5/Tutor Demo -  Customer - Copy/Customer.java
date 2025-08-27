@@ -8,12 +8,12 @@
 
 
 // == GOALS == 
-// Menu
-// Deposit
-// Withdraw
-// Transfer
-// Show
-// Exit
+// Menu - CUSTOMER, it's our main class and works with multiple accounts (e.g. transfer)
+// Deposit - CUSTOMER+ACCOUNT, call deposit() from customer, deposit(double amount) in account
+// Withdraw - CUSTOMER+ACCOUNT, call withdraw() from customer, withdraw(double amount) in account
+// Transfer - CUSTOMER+ACCOUNT, call transfer() from customer, transferTo(Account target, double amount) in account
+// Show - CUSTOMER+ACCOUNT, call show() from customer, Override toString() in account
+// Exit - CUSTOMER, call exit() from customer
 
 public class Customer {
     // == FIELDS == 

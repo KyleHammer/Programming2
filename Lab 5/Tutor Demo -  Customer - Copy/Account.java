@@ -25,8 +25,11 @@ public class Account {
     // balance: The initial balance is "read in" from the user.
     public Account(String type){
         this.type = type;
-        // balance = readBalance();
+        balance = readBalance();
     }
 
-
+    private double readBalance(){
+        System.out.print("Initial " + type + " balance: $");
+        return In.nextDouble();
+    }
 }

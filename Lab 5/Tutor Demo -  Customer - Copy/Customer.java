@@ -16,6 +16,10 @@
 // Exit - CUSTOMER, call exit() from customer
 
 public class Customer {
+    public static void main(String[] args){
+        new Customer();
+    }
+
     // == FIELDS == 
     // A customer has a savings account and a loan account.
     private Account savingsAccount;

@@ -18,8 +18,8 @@
 public class Customer {
     // == FIELDS == 
     // A customer has a savings account and a loan account.
-    Account savingsAccount;
-    Account loanAccount;
+    private Account savingsAccount;
+    private Account loanAccount;
 
     // == CONSTRUCTOR == 
     // Default values? Read-based? Initilise from params?

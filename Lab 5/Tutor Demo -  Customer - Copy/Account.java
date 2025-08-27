@@ -16,8 +16,8 @@
 public class Account {
     // == FIELDS == 
     // Each account has a type (savings/loan) and a balance.
-    String type;
-    double balance;
+    private String type;
+    private double balance;
 
     // == CONSTRUCTOR ==
     // Default values? Read-based? Initilise from params?

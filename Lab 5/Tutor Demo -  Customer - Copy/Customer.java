@@ -7,10 +7,11 @@
  */
 
 
-// == FIELDS == 
-
 // == GOALS == 
 
 public class Customer {
+    // == FIELDS == 
+
     // == CONSTRUCTOR == 
+    
 }

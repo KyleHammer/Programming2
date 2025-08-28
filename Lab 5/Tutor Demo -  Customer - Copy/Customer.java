@@ -55,22 +55,17 @@ public class Customer {
         }
     }
 
-    private double readAmountToDeposit() {
-        System.out.print("Amount to deposit: $");
-        return In.nextDouble();
-    }
-
-    private double readAmountToWithdraw() {
-        System.out.print("Amount to withdraw: $");
+    private double readAmount(String action) {
+        System.out.print("Amount to " + action + ": $");
         return In.nextDouble();
     }
 
     private void deposit() {
-        savingsAccount.deposit(readAmountToDeposit());
+        savingsAccount.deposit(readAmount("deposit"));
     }
 
     private void withdraw() {
-        double amount = readAmountToWithdraw();
+        double amount = readAmount("withdraw");
 
         if (savingsAccount.has(amount))
             savingsAccount.withdraw(amount);

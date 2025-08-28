@@ -34,6 +34,10 @@ public class Account {
         return In.nextDouble();
     }
 
+    public void deposit(double amount) {
+        balance += amount;
+    }
+
     // Needs to be accessed by Customer (Public)
     // Also why Override?
     @Override

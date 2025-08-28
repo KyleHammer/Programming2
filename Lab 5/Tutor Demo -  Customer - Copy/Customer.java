@@ -55,8 +55,13 @@ public class Customer {
         }
     }
 
-    private void deposit(){
+    private double readAmountToDeposit() {
+        System.out.print("Amount to deposit: $");
+        return In.nextDouble();
+    }
 
+    private void deposit() {
+        savingsAccount.deposit(readAmountToDeposit());
     }
 
     private void withdraw(){

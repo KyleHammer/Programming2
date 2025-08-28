@@ -17,7 +17,7 @@
 
 public class Customer {
     public static void main(String[] args){
-        new Customer();
+        new Customer().use();
     }
 
     // == FIELDS == 
@@ -33,5 +33,50 @@ public class Customer {
     public Customer(){
         savingsAccount = new Account("Savings");
         loanAccount = new Account("Loan");
+    }
+
+    private char readChoice(){
+        System.out.print("Customer menu (d/w/t/s/x): ");
+        return In.nextChar();
+    }
+
+    // For now keep private
+    // BUT what if we had a "Bank" class that wants to access customer.use()?
+    private void use(){
+        char choice;
+        while((choice = readChoice()) != 'x'){
+            switch(choice){
+                case 'd': deposit(); break;
+                case 'w': withdraw(); break;
+                case 't': transfer(); break;
+                case 's': show(); break;
+                default: help(); break;
+            }
+        }
+    }
+
+    private void deposit(){
+
+    }
+
+    private void withdraw(){
+
+    }
+
+    private void transfer(){
+
+    }
+
+    private void show(){
+
+    }
+
+    private void help() {
+        System.out.println("Menu options");
+        System.out.println("d = deposit");
+        System.out.println("w = withdraw");
+        System.out.println("t = transfer");
+        System.out.println("s = show");
+        System.out.println("x = exit");
     }
 }

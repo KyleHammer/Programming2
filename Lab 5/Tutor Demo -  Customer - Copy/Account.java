@@ -34,8 +34,16 @@ public class Account {
         return In.nextDouble();
     }
 
+    public boolean has(double amount) {
+        return balance >= amount;
+    }
+
     public void deposit(double amount) {
         balance += amount;
+    }
+
+    public void withdraw(double amount) {
+        balance -= amount;
     }
 
     // Needs to be accessed by Customer (Public)

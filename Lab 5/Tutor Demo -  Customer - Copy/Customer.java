@@ -60,12 +60,22 @@ public class Customer {
         return In.nextDouble();
     }
 
+    private double readAmountToWithdraw() {
+        System.out.print("Amount to withdraw: $");
+        return In.nextDouble();
+    }
+
     private void deposit() {
         savingsAccount.deposit(readAmountToDeposit());
     }
 
-    private void withdraw(){
+    private void withdraw() {
+        double amount = readAmountToWithdraw();
 
+        if (savingsAccount.has(amount))
+            savingsAccount.withdraw(amount);
+        else
+            System.out.println("Insufficient funds");
     }
 
     private void transfer(){

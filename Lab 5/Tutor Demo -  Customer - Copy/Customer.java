@@ -68,7 +68,8 @@ public class Customer {
     }
 
     private void show(){
-
+        System.out.println(savingsAccount);
+        System.out.println(loanAccount);
     }
 
     private void help() {

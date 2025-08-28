@@ -1,3 +1,4 @@
+import java.text.*;
 /**
  * Each account has a type (Savings/Loan) and a balance.
  * The initial balance is read in from the user.
@@ -31,5 +32,16 @@ public class Account {
     private double readBalance(){
         System.out.print("Initial " + type + " balance: $");
         return In.nextDouble();
+    }
+
+    // Needs to be accessed by Customer (Public)
+    // Also why Override?
+    @Override
+    public String toString(){
+        return type + " account has $" + formatted();
+    }
+
+    private String formatted(){
+        return new DecimalFormat("###,##0.00").format(balance);
     }
 }

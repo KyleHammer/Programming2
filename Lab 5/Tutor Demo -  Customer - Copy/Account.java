@@ -46,6 +46,12 @@ public class Account {
         balance -= amount;
     }
 
+    public void transferTo(double amount, Account target) {
+        balance -= amount;
+        // Why is this legal?
+        target.balance += amount;
+    }
+
     // Needs to be accessed by Customer (Public)
     // Also why Override?
     @Override

@@ -73,10 +73,14 @@ public class Customer {
             System.out.println("Insufficient funds");
     }
 
-    private void transfer(){
-
+    private void transfer() {
+        double amount = readAmount("transfer");
+        if (savingsAccount.has(amount))
+            savingsAccount.transferTo(amount, loanAccount);
+        else
+            System.out.println("Insufficient funds");
     }
-
+    
     private void show(){
         System.out.println(savingsAccount);
         System.out.println(loanAccount);

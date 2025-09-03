@@ -5,16 +5,19 @@
  * and you can transfer money from the savings to the loan account.
  * You can also view the balance of all accounts.
  */
+
+import java.util.*;
+
 public class Customer {
     public static void main(String[] args) {
         new Customer().use();
     }
-    private Account savingsAccount;
-    private Account loanAccount;
+    
+    private LinkedList<Account> accounts = new LinkedList<Account>();
 
     public Customer() {
-        savingsAccount = new Account("Savings");
-        loanAccount = new Account("Loan");
+        accounts.add(new Account("Savings"));
+        accounts.add(new Account("Loan"));
     }
 
     public void use() {

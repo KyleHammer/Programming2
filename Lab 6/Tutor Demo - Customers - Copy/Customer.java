@@ -57,7 +57,12 @@ public class Customer {
     private void deposit() {
         Account account = account(readType());
         
-        account.deposit(readAmount("deposit"));
+        if(account != null) {
+            account.deposit(readAmount("deposit"));
+        }else {
+            System.out.println("No such account exists");
+        }
+        
     }
 
     private void withdraw() {
@@ -88,7 +93,12 @@ public class Customer {
     private void show() {
         Account account = account(readType());
 
-        System.out.println(account);
+        if(account == null){
+            System.out.println("No such account exists");
+        } else {
+            System.out.println(account);
+        }
+        
     }
 
     private void help() {

@@ -49,8 +49,15 @@ public class Customer {
         return In.nextChar();
     }
 
+    private String readType() {
+        System.out.print("Account type: ");
+        return In.nextLine();
+    }
+
     private void deposit() {
-        savingsAccount.deposit(readAmount("deposit"));
+        Account account = account(readType());
+        
+        account.deposit(readAmount("deposit"));
     }
 
     private void withdraw() {
@@ -79,8 +86,9 @@ public class Customer {
     }
 
     private void show() {
-        System.out.println(savingsAccount);
-        System.out.println(loanAccount);
+        Account account = account(readType());
+
+        System.out.println(account);
     }
 
     private void help() {

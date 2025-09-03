@@ -20,6 +20,16 @@ public class Customer {
         accounts.add(new Account("Loan"));
     }
 
+    private Account account(String type){
+        for (Account account : accounts){
+            if(account.hasType(type)){
+                return account;
+            }
+        }
+
+        return null;
+    }
+
     public void use() {
         char choice;
         while ((choice = readChoice()) != 'x') {

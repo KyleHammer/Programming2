@@ -25,6 +25,10 @@ public class Account {
         return balance >= amount;
     }
 
+    public boolean hasType(String _type) {
+        return type.equals(_type);
+    }
+
     public void deposit(double amount) {
         balance += amount;
     }

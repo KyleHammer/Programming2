@@ -54,6 +54,8 @@ public class Customer {
     }
 
     private void withdraw() {
+        Account savingsAccount = account("Savings");
+
         double amount = readAmount("withdraw");
         if (savingsAccount.has(amount))
             savingsAccount.withdraw(amount);
@@ -62,9 +64,11 @@ public class Customer {
     }
 
     private void transfer() {
+        Account savingsAccount = account("Savings");
+
         double amount = readAmount("transfer");
         if (savingsAccount.has(amount))
-            savingsAccount.transferTo(amount, loanAccount);
+            savingsAccount.transferTo(amount, account("Loan"));
         else
             System.out.println("Insufficient funds");
     }

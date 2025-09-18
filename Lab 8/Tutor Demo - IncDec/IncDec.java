@@ -1,4 +1,6 @@
 import javafx.application.*;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.stage.*;
 import javafx.scene.*;
 import javafx.scene.control.*;
@@ -25,7 +27,7 @@ public class IncDec extends Application {
         valueTf = new TextField("0");
         decBtn = new Button("-1");
         incBtn = new Button("+1");
-        clear = new button("C");
+        clear = new Button("C");
 
         // Add the leaves to a branch
         HBox box = new HBox(10, valueLbl, valueTf, decBtn, incBtn, clear);

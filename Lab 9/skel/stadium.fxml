@@ -6,9 +6,10 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane xmlns:fx="http://javafx.com/fxml">
+<GridPane hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml">
 	<Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Seat Group:"/>
 	<Text GridPane.columnIndex="1" GridPane.rowIndex="0" text="Front"/>
 	<Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="Capacity:"/>
 	<Text GridPane.columnIndex="1" GridPane.rowIndex="1" text="300"/>
+	<Button GridPane.halignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="2" text="Sell"/>
 </GridPane>

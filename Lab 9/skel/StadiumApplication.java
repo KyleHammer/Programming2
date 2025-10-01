@@ -11,8 +11,10 @@ public class StadiumApplication extends Application {
 	public static void main(String[] args) { launch(args); }
 	@Override
 	public void start(Stage stage) throws Exception {
+		// LOADS FXML
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("stadium.fxml"));
 		Parent root = loader.load();
+		
 		stage.setTitle("Stadium");
 		stage.setScene(new Scene(root));
 		stage.sizeToScene();

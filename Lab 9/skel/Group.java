@@ -18,7 +18,7 @@ public class Group {
     public int getCapacity() { return capacity; }
     public double getPrice() { return price; }
     public int getSold() { return sold; }
-    public double getIncome() { return sold * price; }
+    public double getIncome() { return sold * price; } // Note: Derived from other values
     public int getLeft() { return capacity - sold; }
 
     public void sell(int number) {

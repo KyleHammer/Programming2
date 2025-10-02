@@ -8,17 +8,17 @@
 
 <GridPane fx:controller="StadiumController" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml">
 	<Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Seat Group:"/>
-	<Text GridPane.columnIndex="1" GridPane.rowIndex="0" text="Front"/>
+	<Text GridPane.columnIndex="1" GridPane.rowIndex="0" text="${controller.stadium.group.name}"/>
 	<Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="Capacity:"/>
-	<Text GridPane.columnIndex="1" GridPane.rowIndex="1" text="300"/>
+	<Text GridPane.columnIndex="1" GridPane.rowIndex="1" text="${controller.stadium.group.capacity}"/>
 	<Label GridPane.columnIndex="0" GridPane.rowIndex="2" text="Price:"/>
-	<Text GridPane.columnIndex="1" GridPane.rowIndex="2" text=""/>
+	<Text GridPane.columnIndex="1" GridPane.rowIndex="2" text="${controller.stadium.group.price}"/>
 	<Label GridPane.columnIndex="0" GridPane.rowIndex="3" text="Sold:"/>
-	<Text GridPane.columnIndex="1" GridPane.rowIndex="3" text=""/>
+	<Text GridPane.columnIndex="1" GridPane.rowIndex="3" text="${controller.stadium.group.sold}"/>
 	<Label GridPane.columnIndex="0" GridPane.rowIndex="4" text="Left:"/>
-	<Text GridPane.columnIndex="1" GridPane.rowIndex="4" text=""/>
+	<Text GridPane.columnIndex="1" GridPane.rowIndex="4" text="${controller.stadium.group.left}"/>
 	<Label GridPane.columnIndex="0" GridPane.rowIndex="5" text="Income:"/>
-	<Text GridPane.columnIndex="1" GridPane.rowIndex="5" text=""/>
+	<Text GridPane.columnIndex="1" GridPane.rowIndex="5" text="${controller.stadium.group.income}"/>
 	<Label GridPane.columnIndex="0" GridPane.rowIndex="6" text="Sell:"/>
 	<TextField GridPane.columnIndex="1" GridPane.rowIndex="6" text="0"
 	fx:id="sellTf"/>

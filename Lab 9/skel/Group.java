@@ -44,4 +44,8 @@ public class Group {
     private String formatted(double money) {
         return new DecimalFormat("###,##0.00").format(money);
     }
+
+    public boolean canSell(int number) {
+        return number <= capacity;
+    }
 }

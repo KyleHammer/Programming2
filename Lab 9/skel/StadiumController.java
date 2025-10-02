@@ -22,7 +22,8 @@ public class StadiumController {
 
     @FXML public void handleSell(ActionEvent e){
         int amount = getAmount();
-        stadium.getGroup().sell(amount);
+        if(stadium.getGroup().canSell(amount))
+            stadium.getGroup().sell(amount);
         setAmount(0);
     }
 }

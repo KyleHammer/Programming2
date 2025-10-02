@@ -1,4 +1,6 @@
 import java.text.*;
+
+import javafx.beans.binding.Bindings;
 import javafx.beans.property.*;
 
 public class Group {
@@ -6,21 +8,29 @@ public class Group {
     private int capacity;
     private double price;
     private IntegerProperty sold = new SimpleIntegerProperty(); // Allows JavaFX to update the view
+    private DoubleProperty income = new SimpleDoubleProperty();
+    private IntegerProperty left = new SimpleIntegerProperty();
 
     public Group(String name, int capacity, double price) {
         this.name = name;
         this.capacity = capacity;
         this.price = price;
-        sold.set(0);;
+
+        income.bind(sold.multiply(price));
+        left.bind(Bindings.subtract(capacity, sold));
+
+        sold.set(0);
     }
 
     public final ReadOnlyIntegerProperty soldProperty() {return sold;};
+    public final ReadOnlyDoubleProperty incomeProperty() {return income;};
+    public final ReadOnlyIntegerProperty leftProperty() {return left;};
     public final String getName() { return name; }
     public final int getCapacity() { return capacity; }
     public final double getPrice() { return price; }
     public final int getSold() { return sold.get(); }
-    public final double getIncome() { return sold.get() * price; } // Note: Derived from other values
-    public final int getLeft() { return capacity - sold.get(); }
+    public final double getIncome() { return income.get(); } // Note: Derived from other values
+    public final int getLeft() { return left.get(); }
 
     public void sell(int number) {
         sold.set(sold.get() + number);

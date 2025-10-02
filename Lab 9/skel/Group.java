@@ -5,24 +5,25 @@ public class Group {
     private String name;
     private int capacity;
     private double price;
-    private int sold;
+    private IntegerProperty sold = new SimpleIntegerProperty(); // Allows JavaFX to update the view
 
     public Group(String name, int capacity, double price) {
         this.name = name;
         this.capacity = capacity;
         this.price = price;
-        sold = 0;
+        sold.set(0);;
     }
 
+    public final ReadOnlyIntegerProperty soldProperty() {return sold;};
     public final String getName() { return name; }
     public final int getCapacity() { return capacity; }
     public final double getPrice() { return price; }
-    public final int getSold() { return sold; }
-    public final double getIncome() { return sold * price; } // Note: Derived from other values
-    public final int getLeft() { return capacity - sold; }
+    public final int getSold() { return sold.get(); }
+    public final double getIncome() { return sold.get() * price; } // Note: Derived from other values
+    public final int getLeft() { return capacity - sold.get(); }
 
     public void sell(int number) {
-        sold += number;
+        sold.set(sold.get() + number);
     }
 
     @Override

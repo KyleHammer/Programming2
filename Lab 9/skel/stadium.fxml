@@ -20,7 +20,8 @@
 	<Label GridPane.columnIndex="0" GridPane.rowIndex="5" text="Income:"/>
 	<Text GridPane.columnIndex="1" GridPane.rowIndex="5" text=""/>
 	<Label GridPane.columnIndex="0" GridPane.rowIndex="6" text="Sell:"/>
-	<TextField GridPane.columnIndex="1" GridPane.rowIndex="6" text="0"/>
+	<TextField GridPane.columnIndex="1" GridPane.rowIndex="6" text="0"
+	fx:id="sellTf"/>
 	<Button GridPane.halignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="7"
 	onAction="#handleSell" text="Sell"/>
 </GridPane>

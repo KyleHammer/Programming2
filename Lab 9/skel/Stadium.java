@@ -7,7 +7,7 @@ public class Stadium {
         group = new Group("front", 300, 400.0);
     }
 
-    public Group getGroup() {
+    public final Group getGroup() {
         return group;
     }
 }

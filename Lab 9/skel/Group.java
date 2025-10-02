@@ -14,12 +14,12 @@ public class Group {
         sold = 0;
     }
 
-    public String getName() { return name; }
-    public int getCapacity() { return capacity; }
-    public double getPrice() { return price; }
-    public int getSold() { return sold; }
-    public double getIncome() { return sold * price; } // Note: Derived from other values
-    public int getLeft() { return capacity - sold; }
+    public final String getName() { return name; }
+    public final int getCapacity() { return capacity; }
+    public final double getPrice() { return price; }
+    public final int getSold() { return sold; }
+    public final double getIncome() { return sold * price; } // Note: Derived from other values
+    public final int getLeft() { return capacity - sold; }
 
     public void sell(int number) {
         sold += number;

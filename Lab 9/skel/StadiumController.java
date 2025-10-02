@@ -8,6 +8,13 @@ import javafx.beans.property.*;
 import java.io.*;
 
 public class StadiumController {
+    private Stadium stadium = new Stadium();
+
+    // JavaFX getters should be final
+    public final Stadium getStadium() {
+        return stadium;
+    }
+
     @FXML private TextField sellTf;
 
     private final int getAmount() { return Integer.parseInt(sellTf.getText()); }
@@ -15,6 +22,7 @@ public class StadiumController {
 
     @FXML public void handleSell(ActionEvent e){
         int amount = getAmount();
+        stadium.getGroup().sell(amount);
         setAmount(0);
     }
 }

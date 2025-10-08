@@ -1,5 +1,3 @@
-package controller;
-
 import javafx.collections.*;
 import javafx.event.*;
 import javafx.fxml.*;
@@ -9,7 +7,6 @@ import javafx.stage.*;
 import javafx.beans.property.*;
 import java.io.*;
 import au.edu.uts.ap.javafx.*;
-import model.*;
 
 public class GroupController extends Controller<Group> {
     @FXML private Button sellBtn;

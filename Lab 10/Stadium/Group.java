@@ -1,5 +1,3 @@
-package model;
-
 import java.text.*;
 import javafx.beans.property.*;
 

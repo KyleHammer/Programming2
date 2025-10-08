@@ -8,6 +8,6 @@
 
 <VBox fx:controller="controller.StadiumController" xmlns:fx="http://javafx.com/fxml" alignment="center">
 	<Text text = "Stadium"/>
-	<ListView items="${controller.stadium.groups}" prefWidth="200" prefHeight="150"/>
-	<Button text="Open"/>
+	<ListView fx:id="groupsLv" items="${controller.stadium.groups}" prefWidth="200" prefHeight="150"/>
+	<Button onAction="#openGroup" text="Open"/>
 </VBox>

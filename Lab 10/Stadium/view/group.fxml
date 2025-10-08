@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane fx:controller="controller.GroupController" 
+<GridPane stylesheets="@styles.css" fx:controller="controller.GroupController" 
 		xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" 
 		>
 

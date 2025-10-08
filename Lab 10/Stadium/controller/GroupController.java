@@ -1,11 +1,14 @@
+package controller;
 import javafx.collections.*;
 import javafx.event.*;
 import javafx.fxml.*;
 import javafx.scene.text.*;
 import javafx.scene.control.*;
 import javafx.stage.*;
+import model.Group;
 import javafx.beans.property.*;
 import java.io.*;
+
 import au.edu.uts.ap.javafx.*;
 
 public class GroupController extends Controller<Group> {

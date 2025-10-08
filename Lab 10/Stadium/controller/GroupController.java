@@ -12,6 +12,9 @@ import java.io.*;
 import au.edu.uts.ap.javafx.*;
 
 public class GroupController extends Controller<Group> {
+    // Our previous model - Good for a single window
+    private Group group = new Group("front", 300, 400.0);
+
     @FXML private Button sellBtn;
     @FXML private TextField amountTf;
 

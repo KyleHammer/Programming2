@@ -8,7 +8,12 @@ import javafx.stage.*;
 import javafx.beans.property.*;
 import java.io.*;
 import au.edu.uts.ap.javafx.*;
+import model.Stadium;
 
-public class StadiumController {
+public class StadiumController extends Controller<Stadium> {
     
+    public Stadium getStadium(){
+        return model;
+    }
+
 }

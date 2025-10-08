@@ -6,5 +6,5 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox>
+<VBox fx:controller="controller.StadiumController" xmlns:fx="http://javafx.com/fxml" alignment="center">
 </VBox>

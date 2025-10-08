@@ -3,11 +3,12 @@
     property-names: values;
 } */
 
-#header{
+.headerText{
     -fx-fill:tomato;
     -fx-font-size: 50px;
 }
 
 Button{
     -fx-background-color: green;
+    -fx-text-fill: tomato;
 }

@@ -7,7 +7,7 @@
 <?import javafx.scene.text.*?>
 
 <VBox stylesheets="@styles.css" fx:controller="controller.StadiumController" xmlns:fx="http://javafx.com/fxml" alignment="center">
-	<Text fx:id="header" text="Stadium"/>
+	<Text styleClass="headerText" text="Stadium"/>
 	<ListView fx:id="groupsLv" items="${controller.stadium.groups}" prefWidth="200" prefHeight="150"/>
 	<Button onAction="#openGroup" text="Open"/>
 </VBox>

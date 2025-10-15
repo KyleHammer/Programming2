@@ -12,10 +12,10 @@ import au.edu.uts.ap.javafx.*;
 import model.*;
 
 public class StadiumController extends Controller<Stadium> {
-    @FXML private ListView<Group> groupsLv;
+    @FXML private TableView<Group> groupsTv;
 
     public final Stadium getStadium() { return model; }
-    private Group getGroup() { return groupsLv.getSelectionModel().getSelectedItem(); }
+    private Group getGroup() { return groupsTv.getSelectionModel().getSelectedItem(); }
 
     @FXML private void initialize() {
     }

@@ -22,6 +22,17 @@ public class GroupController extends Controller<Group> {
     public void initialize() {
         amountTf.textProperty().addListener((observable, oldValue, newValue) -> {
             System.out.println("Old Value = " +oldValue+ ", New Value = " +newValue);
+            // If new value has digits, sellBtn to enable
+            // otherwise disable
+            if(newValue.matches("[0123456789]+")){
+                sellBtn.setDisable(false);
+            }else{
+                sellBtn.setDisable(true);
+            }
+
+            // " +" means one or more spaces
+            // "[0123456789]" means match 0 or 1 or 2. Single digit
+            // "[0123456789]+" means match one ore more
         });
     }
 

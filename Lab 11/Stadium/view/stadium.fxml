@@ -16,6 +16,11 @@
 	<TableView fx:id="groupsTv" prefWidth="500" prefHeight="200" items="${controller.stadium.groups}">
 		<columns>
 			<TableColumn text ="Name"></TableColumn>
+			<TableColumn text ="Capacity"></TableColumn>
+			<TableColumn text ="Price"></TableColumn>
+			<TableColumn text ="Sold"></TableColumn>
+			<TableColumn text ="Left"></TableColumn>
+			<TableColumn text ="Income"></TableColumn>
 		</columns>
 	</TableView>
 	<HBox alignment="center" spacing="10">

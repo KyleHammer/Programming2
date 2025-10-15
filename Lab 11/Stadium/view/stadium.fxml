@@ -16,16 +16,24 @@
 	<ListView fx:id="groupsLv" prefWidth="200" prefHeight="200" items="${controller.stadium.groups}"/>
 	<TableView fx:id="groupsTv" prefWidth="500" prefHeight="200" items="${controller.stadium.groups}">
 		<columns>
-			<TableColumn text ="Name">
-				<cellValueFactory>
-					<PropertyValueFactory property="name" />
-				</cellValueFactory>
+			<TableColumn text="Name">
+				<cellValueFactory><PropertyValueFactory property="name"/></cellValueFactory>
 			</TableColumn>
-			<TableColumn text ="Capacity"></TableColumn>
-			<TableColumn text ="Price"></TableColumn>
-			<TableColumn text ="Sold"></TableColumn>
-			<TableColumn text ="Left"></TableColumn>
-			<TableColumn text ="Income"></TableColumn>
+			<TableColumn text="Capacity">
+				<cellValueFactory><PropertyValueFactory property="capacity"/></cellValueFactory>
+			</TableColumn>
+			<TableColumn text="Price">
+				<cellValueFactory><PropertyValueFactory property="price"/></cellValueFactory>
+			</TableColumn>
+			<TableColumn text="Sold">
+				<cellValueFactory><PropertyValueFactory property="sold"/></cellValueFactory>
+			</TableColumn>
+			<TableColumn text="Income">
+				<cellValueFactory><PropertyValueFactory property="income"/></cellValueFactory>
+			</TableColumn>
+			<TableColumn text="Left">
+				<cellValueFactory><PropertyValueFactory property="left"/></cellValueFactory>
+			</TableColumn>
 		</columns>
 	</TableView>
 	<HBox alignment="center" spacing="10">

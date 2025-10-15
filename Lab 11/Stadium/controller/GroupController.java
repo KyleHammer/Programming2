@@ -19,6 +19,12 @@ public class GroupController extends Controller<Group> {
     private final int getAmount() { return Integer.parseInt(amountTf.getText()); }
     private final void setAmount(int amount) { amountTf.setText(""+amount); }
 
+    public void initialize() {
+        amountTf.textProperty().addListener((observable, oldValue, newValue) -> {
+            System.out.println("Old Value = " +oldValue+ ", New Value = " +newValue);
+        });
+    }
+
     @FXML private void handleSell(ActionEvent event) {
         int amount = getAmount();
         if (getGroup().canSell(amount))

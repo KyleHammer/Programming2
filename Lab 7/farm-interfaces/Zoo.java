@@ -10,9 +10,13 @@ public class Zoo {
 	}
 
 	public void use() {
-		LinkedList<Dog> animals = new LinkedList<>();
+		LinkedList<Animal> animals = new LinkedList<>();
 		animals.add(new Dog());
 		animals.add(new Cat());
 		animals.add(new Parrot());
+
+		for (Animal animal : animals){
+			System.out.println("A " + animal.getName() + " goes " + animal.getNoise());
+		}
 	}
 }

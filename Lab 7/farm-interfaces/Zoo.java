@@ -10,6 +10,9 @@ public class Zoo {
 	}
 
 	public void use() {
-		
+		LinkedList<Dog> animals = new LinkedList<>();
+		animals.add(new Dog());
+		animals.add(new Cat());
+		animals.add(new Parrot());
 	}
 }

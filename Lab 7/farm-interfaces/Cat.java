@@ -1,4 +1,4 @@
-public class Cat implements Animal {
+public class Cat extends WalkingAnimal {
     public String getName(){
         return "Cat";
     }

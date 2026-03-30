@@ -6,4 +6,8 @@ public class Parrot implements Animal {
     public String getNoise(){
         return "squawk";
     }
+
+    public String getMove(){
+        return "flies";
+    }
 }

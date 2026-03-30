@@ -6,4 +6,8 @@ public class Dog implements Animal {
     public String getNoise(){
         return "woof";
     }
+
+    public String getMove(){
+        return "walks";
+    }
 }

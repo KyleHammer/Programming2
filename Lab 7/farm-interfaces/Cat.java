@@ -6,4 +6,8 @@ public class Cat implements Animal {
     public String getNoise(){
         return "meow";
     }
+
+    public String getMove(){
+        return "walks";
+    }
 }

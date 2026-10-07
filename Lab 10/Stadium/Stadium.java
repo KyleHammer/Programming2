@@ -1,4 +1,3 @@
-package model;
 import java.text.*;
 import java.util.*;
 import javafx.collections.*;
@@ -7,7 +6,7 @@ import javafx.beans.property.*;
 import javafx.beans.binding.*;
 
 public class Stadium {
-    private ObservableList<Group> groups = FXCollections.observableArrayList();
+    private LinkedList<Group> groups = new LinkedList<Group>();
 
     public Stadium() {
         groups.add(new Group("front", 300, 400.0));
@@ -15,5 +14,5 @@ public class Stadium {
         groups.add(new Group("back", 200, 60.0));
     }
 
-    public final ObservableList<Group> getGroups() { return groups; }
+    public final LinkedList<Group> getGroups() { return groups; }
 }

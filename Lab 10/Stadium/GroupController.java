@@ -1,21 +1,21 @@
-package controller;
 import javafx.collections.*;
 import javafx.event.*;
 import javafx.fxml.*;
 import javafx.scene.text.*;
 import javafx.scene.control.*;
 import javafx.stage.*;
-import model.Group;
 import javafx.beans.property.*;
 import java.io.*;
 
 import au.edu.uts.ap.javafx.*;
 
-public class GroupController extends Controller<Group> {
+public class GroupController {
+    private Group group = new Group("front", 300, 400.0);
+
     @FXML private Button sellBtn;
     @FXML private TextField amountTf;
 
-    public final Group getGroup() { return model; }
+    public final Group getGroup() { return group; }
     private final int getAmount() { return Integer.parseInt(amountTf.getText()); }
     private final void setAmount(int amount) { amountTf.setText(""+amount); }
 

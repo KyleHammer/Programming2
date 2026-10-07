@@ -1,3 +1,4 @@
+package model;
 import java.text.*;
 import java.util.*;
 import javafx.collections.*;

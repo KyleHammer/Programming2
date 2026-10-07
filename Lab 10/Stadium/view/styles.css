@@ -1,0 +1,14 @@
+/* selector{
+    property-names: values;
+} */
+
+/* # means anything with a header ID will use this */
+#header {
+    -fx-fill: tomato;
+    -fx-font-size: 50px;
+}
+
+/* Any Button will use this */
+Button {
+    -fx-background-color: blue;
+}

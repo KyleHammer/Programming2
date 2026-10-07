@@ -11,13 +11,11 @@ import java.io.*;
 
 import au.edu.uts.ap.javafx.*;
 
-public class GroupController {
-    private Group group = new Group("front", 300, 400.0);
-
+public class GroupController extends Controller<Group> {
     @FXML private Button sellBtn;
     @FXML private TextField amountTf;
 
-    public final Group getGroup() { return group; }
+    public final Group getGroup() { return model; }
     private final int getAmount() { return Integer.parseInt(amountTf.getText()); }
     private final void setAmount(int amount) { amountTf.setText(""+amount); }
 
